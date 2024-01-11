@@ -1,9 +1,26 @@
 import React from 'react'
+import Products from './products'
 
  function App() {
-  return (
-    <div>haseeb</div>
-  )
+//   // return sirf ik hi div  hoga  do yah zada div return karna ka 2 tareeka hain 1
+//   return (
+//     <div>
+//   <div className='haseeb'>haseeb</div>
+//   <h1></h1>
+//   <h2></h2>
+// {/* and more */}
+//     </div>
+  
+//   )
+
+// method 2
+return(
+<div>
+  <h1 className='p-4 bg-black text-white'>hello</h1>
+<Products/>
+</div>
+)
+
 }
 export default App
 
