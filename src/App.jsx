@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Products from './products'
 
  function App() {
@@ -14,10 +14,12 @@ import Products from './products'
 //   )
 
 // method 2
+// state
+let [a,b] = useState(70)
 return(
 <div>
-  <h1 className='p-4 bg-black text-white'>hello</h1>
-<Products/>
+  <h1 className='p-4 bg-black text-white'>{a}</h1>
+<button className='border-1 bg-black text-white' onClick={()=>b(a+1)}>change</button>
 </div>
 )
 
